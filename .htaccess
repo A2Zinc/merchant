@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://3.135.1.38/POS_system/project/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+
+<IfModule mod_php7.c>
+   php_value upload_max_filesize 4000M
+   php_value post_max_size 4000M
+</IfModule>
+

@@ -1,0 +1,35 @@
+,
+"SHIFT REPORT"
+
+"Business Date:",09/23/2021
+"Requested By:",
+"Employee Name:","Sujit  Kumar"
+"Print Date:",09/23/2021
+"Terminal #:","Terminal 1"
+"ADJ PROCEEDS:",
+"+ CASH IN DRAWER:",$100.00
+"+ COIN DISPENSER:",$0.35
+"+ CASH SALES:",$0.00
+"+ NON-CASH SALE:",$0.00
+"CREDIT CARD",$0.00
+"DEBIT CARD",$0.00
+EBT,$0.00
+"- LOYALTY DISCOUNT:",$0.00
+
+PAYOUTS
+
+User,Time,Amount,Type
+lunavos,08:02,$120.00,V
+lunavos,08:07,$10.00,V
+
+"TOTAL PAYOUTS:",$130.00
+
+"CASH DROPS"
+
+User,Time,Amount
+
+"TOTAL CASH DROPS:",$0.00
+,
+"REQUIRED CASH:",$-29.65
+"CLOSED CASH:",$0.00
+DIFFERENCE:," + $29.65 "

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,500i,600,700,800,900&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #1E1E1E;
+    letter-spacing: 0.416667px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    margin:0px;
+}
+*{
+    outline:none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0px;
+}
+h1{}
+h2{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 52px;
+}
+h3{}
+h4{}
+h5{}
+h6{}
+
+a{
+    text-decoration: none;
+    color: #2D7F61;
+}
+
+ul,li{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+p{}
+img{
+    max-width: 100%;
+}
+.btn{
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 27px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+}
+.btn img{
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn-primary{
+    background: #2D7F61;
+}
+.btn-primary:hover{}
+.btn-default{}
+.btn-default:hover{}
+
+.btn-link{
+    color: #2D7F61;
+}
+.btn-xl{}
+.btn-md{
+    padding: 8px 20px;
+    font-size: 13px;
+}
+.btn-sm{
+    font-size: 12px;
+    padding: 4px 20px;
+}
+label{
+    color: #707070;
+    font-size: 16px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+.form-control{
+    border: 1px solid #A1A1A1;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 13px;
+    height: 45px;
+    box-sizing: border-box;
+    color: #1E1E1E;
+    font-weight: 600;
+    font-size: 12px;
+}
+.form-control:hover,
+.form-control:focus{}
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.cols{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+.col-1{
+    width:8.33%
+}
+.col-2{
+    width:16.66%
+}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.67%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.67%;}
+.col-9{width:75%;}
+.col-10{width:83.34%;}
+.col-11{width:91.67%;}
+.col-12{width:100%;}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.order-first{
+    order:1;
+}
+.order-last{
+    order:1;
+}
+.align-items-center{
+    align-items: center;
+}
+.box{
+    padding: 25px;
+    border:1px solid #ddd;
+}
+.radius-1{border-radius: 3px;}
+.radius-2{border-radius: 5px;}
+.radius-3{border-radius: 10px;}
+.radius-4{border-radius: 15px;}
+.radius-4{border-radius: 20px;}
+.circle{
+    border-radius: 100%;
+}
+.btn-block{
+    display: block;
+}
+.bg_image{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+
+.section_title{
+    padding-bottom: 40px;
+}
+.section_title h2{
+    font-size: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+.section_title h2::before{content:'';width: 8px;height: 10px;background: #1E1E1E;left: 0px;position: absolute;top: 9px;}
+
+table{}
+table th{}
+table th td{}
+table tr{}
+table tr:hover{}
+table tr td{}
+
+
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+  .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #1E1E1E;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .styled-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #C3C3C3;
+  }
+  .styled-checkbox:hover + label:before {
+    background: #2f7f61;
+  }
+  .styled-checkbox:focus + label:before {
+  }
+  .styled-checkbox:checked + label:before {
+    background: #2f7f61;
+    border-color: #2f7f61;
+  }
+  .styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+  .styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #2f7f61;
+  }
+  .styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 13px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+    

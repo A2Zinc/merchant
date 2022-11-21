@@ -1,0 +1,12 @@
+********START-->2021-07-08 18:13:18
+-------GET DATA---------
+{"merchantId":"800000000612","hsn":"20180SC25058281","amount":1078,"includeSignature":"false","includeAmountDisplay":"true","confirmAmount":"false","beep":"true","aid":"debit","includeAVS":"false","includePin":"true","capture":"true","orderId":"F7IQBNWWY9VERZQ","clearDisplayDelay":"1000","userFields":{"UDF1":"Sadiksha Sharma","UDF2":"IOWAVUE"}}&
+
+********END-->2021-07-08 18:13:18
+
+********START-->2021-07-08 18:16:14
+-------GET DATA---------
+{"merchantId":"800000000612","hsn":"20180SC25058281","amount":1078,"includeSignature":"false","includeAmountDisplay":"true","confirmAmount":"false","beep":"true","aid":"debit","includeAVS":"false","includePin":"true","capture":"true","orderId":"GMQHT5BIGSLU8U3","clearDisplayDelay":"1000","userFields":{"UDF1":"Sadiksha Sharma","UDF2":"IOWAVUE"}}&
+
+********END-->2021-07-08 18:16:14
+

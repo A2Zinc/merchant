@@ -1,0 +1,80 @@
+div#mlkeyboard{
+  font-family: Tahoma,Arial,sans-serif;
+  width: 100%; 
+  position: absolute;
+  bottom: 0;   
+  /* height: 260px;  */
+  margin: 0px auto;
+  z-index: 999999;
+}
+  div#mlkeyboard ul,div#mlkeyboard li{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}div#mlkeyboard ul{background:#8d8d8d;list-style:none;font-size:12px;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}@media screen and (min-width: 700px){div#mlkeyboard ul{width:670px;height:230px;margin:0 auto;padding:0px;border-radius:5px 5px 0 0}}div#mlkeyboard ul li{float:left;margin:0 0 0.5% 0.5%;width:6%;text-align:center;background:#fff;border:1px solid #f9f9f9;-moz-border-radius:5px;-webkit-border-radius:5px;border-color:#e5e5e5;cursor:pointer}@media screen and (min-width: 700px){div#mlkeyboard ul li{width:40px;height:40px;line-height:40px;margin:2px;color: black!important;}}div#mlkeyboard ul li.active{background-color:#E6FFD8;border-color:#6FDA54}div#mlkeyboard ul li:hover{background-color:#FFD488;border-color:#FFAE6E}div#mlkeyboard ul #mlkeyboard-capslock,div#mlkeyboard ul #mlkeyboard-tab,div#mlkeyboard ul #mlkeyboard-left-shift{clear:left}@media screen and (min-width: 700px){div#mlkeyboard ul #mlkeyboard-backspace{width:66px}}div#mlkeyboard ul #mlkeyboard-tab{width:7%}@media screen and (min-width: 700px){div#mlkeyboard ul #mlkeyboard-tab{width:65px}}div#mlkeyboard ul #mlkeyboard-capslock{width:12%}@media screen and (min-width: 700px){div#mlkeyboard ul #mlkeyboard-capslock{width:75px}}div#mlkeyboard ul #mlkeyboard-return{width:8%}@media screen and (min-width: 700px){div#mlkeyboard ul #mlkeyboard-return{width:76px}}div#mlkeyboard ul #mlkeyboard-left-shift{width:14%}@media screen and (min-width: 700px){div#mlkeyboard ul #mlkeyboard-left-shift{width:100px}}div#mlkeyboard ul #mlkeyboard-right-shift{width:12%}@media screen and (min-width: 540px){div#mlkeyboard ul #mlkeyboard-right-shift{width:96px;margin-right:0}}div#mlkeyboard ul #mlkeyboard-space{clear:left;width:98%}@media screen and (min-width: 700px){div#mlkeyboard ul #mlkeyboard-space{width:662px}}div#mlkeyboard ul.mlkeyboard-modifications{position:absolute;background:rgba(133,133,133,0.6);border-radius:5px;display:none;padding:8px}@media screen and (min-width: 700px){div#mlkeyboard ul.mlkeyboard-modifications{height:46px}}
+/*# sourceMappingURL=jquery.ml-keyboard.css.map */
+#mlkeyboard-space {
+    clear: right!important;  
+      width: 478px!important;
+    
+  }
+  div#mlkeyboard ul {
+    width: 670px;
+    height: 230px;
+    margin: 0 auto;
+    padding: 7px;
+    cursor: move;
+    border-radius: 5px 5px 0 0;
+    z-index: 9999999;
+}
+li#mlkayboard-hide {
+  width: 96px!important;
+}
+
+
+
+/* ****************Number keyboard start here  *********/
+
+div#mlkeyboardnum{
+  font-family: Tahoma,Arial,sans-serif;
+    /* width: 250px; */
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    bottom: 14px;
+    height: 279px;
+    /* margin: 0  auto;
+    right:0;
+    left: auto; */
+}
+  div#mlkeyboardnum ul,div#mlkeyboardnum li{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}div#mlkeyboardnum ul{background:#8d8d8d;list-style:none;font-size:12px;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}@media screen and (min-width: 700px){div#mlkeyboardnum ul{width:670px;height:230px;margin:0 auto;padding:0px;border-radius:5px 5px 0 0}}div#mlkeyboardnum ul li{float:left;margin:0 0 0.5% 0.5%;width:6%;text-align:center;background:#fff;border:1px solid #f9f9f9;-moz-border-radius:5px;-webkit-border-radius:5px;border-color:#e5e5e5;cursor:pointer}@media screen and (min-width: 700px){div#mlkeyboardnum ul li{width:40px;height:40px;line-height:40px;margin:2px}}div#mlkeyboardnum ul li.active{background-color:#E6FFD8;border-color:#6FDA54}div#mlkeyboardnum ul li:hover{background-color:#FFD488;border-color:#FFAE6E}div#mlkeyboardnum ul #mlkeyboardnum-capslock,div#mlkeyboardnum ul #mlkeyboardnum-tab,div#mlkeyboardnum ul #mlkeyboardnum-left-shift{clear:left}@media screen and (min-width: 700px){div#mlkeyboardnum ul #mlkeyboardnum-backspace{width:66px}}div#mlkeyboardnum ul #mlkeyboardnum-tab{width:7%}@media screen and (min-width: 700px){div#mlkeyboardnum ul #mlkeyboardnum-tab{width:65px}}div#mlkeyboardnum ul #mlkeyboardnum-capslock{width:12%}@media screen and (min-width: 700px){div#mlkeyboardnum ul #mlkeyboardnum-capslock{width:75px}}div#mlkeyboardnum ul #mlkeyboardnum-return{width:8%}@media screen and (min-width: 700px){div#mlkeyboardnum ul #mlkeyboardnum-return{width:76px}}div#mlkeyboardnum ul #mlkeyboardnum-left-shift{width:14%}@media screen and (min-width: 700px){div#mlkeyboardnum ul #mlkeyboardnum-left-shift{width:100px}}div#mlkeyboardnum ul #mlkeyboardnum-right-shift{width:12%}@media screen and (min-width: 540px){div#mlkeyboardnum ul #mlkeyboardnum-right-shift{width:96px;margin-right:0}}div#mlkeyboardnum ul #mlkeyboardnum-space{clear:left;width:98%}@media screen and (min-width: 700px){div#mlkeyboardnum ul #mlkeyboardnum-space{width:662px}}div#mlkeyboardnum ul.mlkeyboardnum-modifications{position:absolute;background:rgba(133,133,133,0.6);border-radius:5px;display:none;padding:8px}@media screen and (min-width: 700px){div#mlkeyboardnum ul.mlkeyboardnum-modifications{height:46px}}
+/*# sourceMappingURL=jquery.ml-keyboard.css.map */
+#mlkeyboardnum-space {
+    clear: right!important;  
+      width: 478px!important;
+    
+  } 
+
+div#mlkeyboardnum ul li {
+  width: 77px;
+  height: 50px;
+  line-height: 52px;
+  margin: 2px;
+  font-size: 16px;
+}div#mlkeyboardnum ul {
+  width: 250px;
+  height: 279px;
+  margin: 0 auto;
+  padding: 7px;
+  cursor: move;
+  border-radius: 5px 5px 0 0;
+}
+div#mlkeyboardnum ul #mlkeyboardnum-return {
+  width: 77px;
+}div#mlkeyboardnum ul #mlkeyboardnum-backspace {
+  width: 77px;
+  line-height: 56px;
+}li#mlkayboardnum-hide {
+  width: 77px!important;
+}div#mlkeyboardnum ul #mlkeyboardnum-tab {
+  
+  width: 77px!important;
+}div#mlkeyboardnum ul #mlkeyboardnum-return {
+  width: 77px;
+}

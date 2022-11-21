@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");
+/*font Variables*/
+/*Color Variables*/
+.multi_step_form {
+  background: #f6f9fb;
+  display: block;
+  /* overflow: hidden; */
+}
+.multi_step_form #msform {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  /* min-height: 820px;
+  max-width: 810px; */
+  margin: 0 auto;
+  background: #fff;
+  z-index: 1;
+}
+.multi_step_form #msform .tittle {
+  text-align: center;
+  padding-bottom: 55px;
+}
+.multi_step_form #msform .tittle h2 {
+  font: 500 24px/35px "Roboto", sans-serif;
+  color: #3f4553;
+  padding-bottom: 5px;
+}
+.multi_step_form #msform .tittle p {
+  font: 400 16px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset {
+  border: 0;
+  padding: 20px 105px 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.multi_step_form #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+.multi_step_form #msform fieldset h3 {
+  font: 500 18px/35px "Roboto", sans-serif;
+  color: #3f4553;
+}
+.multi_step_form #msform fieldset h6 {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+  padding-bottom: 30px;
+}
+.multi_step_form #msform fieldset .intl-tel-input {
+  display: block;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+.multi_step_form
+  #msform
+  fieldset
+  .intl-tel-input
+  .flag-container
+  .selected-flag {
+  padding: 0 20px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  width: 65px;
+}
+.multi_step_form
+  #msform
+  fieldset
+  .intl-tel-input
+  .flag-container
+  .selected-flag
+  .iti-arrow {
+  border: 0;
+}
+.multi_step_form
+  #msform
+  fieldset
+  .intl-tel-input
+  .flag-container
+  .selected-flag
+  .iti-arrow:after {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: normal normal normal 24px/7px Ionicons;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset #phone {
+  padding-left: 80px;
+}
+.multi_step_form #msform fieldset .form-group {
+  padding: 0 10px;
+}
+.multi_step_form #msform fieldset .fg_2,
+.multi_step_form #msform fieldset .fg_3 {
+  padding-top: 10px;
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform fieldset .fg_3 {
+  padding-bottom: 70px;
+}
+.multi_step_form #msform fieldset .form-control,
+.multi_step_form #msform fieldset .product_select {
+  border-radius: 3px;
+  border: 1px solid #d8e1e7;
+  padding: 0 20px;
+  height: auto;
+  font: 400 15px/48px "Roboto", sans-serif;
+  color: #5f6771;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+.multi_step_form #msform fieldset .form-control.placeholder,
+.multi_step_form #msform fieldset .product_select.placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control:-moz-placeholder,
+.multi_step_form #msform fieldset .product_select:-moz-placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control::-moz-placeholder,
+.multi_step_form #msform fieldset .product_select::-moz-placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control::-webkit-input-placeholder,
+.multi_step_form #msform fieldset .product_select::-webkit-input-placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control:hover,
+.multi_step_form #msform fieldset .product_select:hover,
+.multi_step_form #msform fieldset .form-control:focus,
+.multi_step_form #msform fieldset .product_select:focus {
+  border-color: #5cb85c;
+}
+.multi_step_form #msform fieldset .form-control:focus.placeholder,
+.multi_step_form #msform fieldset .product_select:focus.placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus:-moz-placeholder,
+.multi_step_form #msform fieldset .product_select:focus:-moz-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus::-moz-placeholder,
+.multi_step_form #msform fieldset .product_select:focus::-moz-placeholder {
+  color: transparent;
+}
+.multi_step_form
+  #msform
+  fieldset
+  .form-control:focus::-webkit-input-placeholder,
+.multi_step_form
+  #msform
+  fieldset
+  .product_select:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .product_select:after {
+  display: none;
+}
+.multi_step_form #msform fieldset .product_select:before {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font: normal normal normal 24px/48px Ionicons;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .product_select .list {
+  width: 100%;
+}
+.multi_step_form #msform fieldset .done_text {
+  padding-top: 40px;
+}
+.multi_step_form #msform fieldset .done_text .don_icon {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  background: #5cb85c;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.multi_step_form #msform fieldset .done_text h6 {
+  line-height: 23px;
+}
+.multi_step_form #msform fieldset .code_group {
+  margin-bottom: 60px;
+}
+.multi_step_form #msform fieldset .code_group .form-control {
+  border: 0;
+  border-bottom: 1px solid #a1a7ac;
+  border-radius: 0;
+  display: inline-block;
+  width: 30px;
+  font-size: 30px;
+  color: #5f6771;
+  padding: 0;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 1;
+}
+.multi_step_form #msform fieldset .passport {
+  margin-top: -10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.multi_step_form #msform fieldset .passport .don_icon {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background: #5cb85c;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.multi_step_form #msform fieldset .passport h4 {
+  font: 500 15px/23px "Roboto", sans-serif;
+  color: #5f6771;
+  padding: 0;
+}
+.multi_step_form #msform fieldset .input-group {
+  padding-bottom: 40px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file {
+  width: 100%;
+  height: auto;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label {
+  width: 168px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid #99a2a8;
+  text-align: center;
+  transition: all 300ms linear 0s;
+  color: #5f6771;
+}
+.multi_step_form
+  #msform
+  fieldset
+  .input-group
+  .custom-file
+  .custom-file-label
+  i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.multi_step_form
+  #msform
+  fieldset
+  .input-group
+  .custom-file
+  .custom-file-label:hover,
+.multi_step_form
+  #msform
+  fieldset
+  .input-group
+  .custom-file
+  .custom-file-label:focus {
+  background: #5cb85c;
+  border-color: #5cb85c;
+  color: #fff;
+}
+.multi_step_form #msform fieldset .input-group .custom-file input {
+  display: none;
+}
+.multi_step_form #msform fieldset .file_added {
+  text-align: left;
+  padding-left: 190px;
+  padding-bottom: 60px;
+}
+.multi_step_form #msform fieldset .file_added li {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .file_added li a {
+  color: #5cb85c;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+.multi_step_form #msform fieldset .file_added li a i {
+  font-size: 22px;
+  padding-right: 8px;
+  position: absolute;
+  left: 0;
+  transform: rotate(20deg);
+}
+.multi_step_form #msform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 24%;
+}
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: #99a2a8;
+  font-size: 9px;
+  width: calc(100% / 3);
+  float: left;
+  position: relative;
+  font: 500 13px/1 "Roboto", sans-serif;
+}
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+  content: "2";
+}
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+  content: "2";
+}
+.multi_step_form #msform #progressbar li:before {
+  /* content: "\f1fa"; */
+  content: counter(step);
+  counter-increment: step;
+  font: normal normal normal 30px/50px Ionicons;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #eaf0f4;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+.multi_step_form #msform #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #eaf0f4;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 150%;
+}
+.multi_step_form #msform #progressbar li.active {
+  color: #3f78e0;
+}
+.multi_step_form #msform #progressbar li.active:before,
+.multi_step_form #msform #progressbar li.active:after {
+  background: #3f78e0;
+  color: white;
+}
+.multi_step_form #msform .action-button {
+  background: #3f78e0;
+  border-radius: 4px;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 130px;
+  font: 700 14px/40px "Roboto", sans-serif;
+  margin-top: 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.multi_step_form #msform .action-button:hover,
+.multi_step_form #msform .action-button:focus {
+  background: #405867;
+  border-color: #405867;
+}
+.multi_step_form #msform .previous_button {
+  /* background: transparent;
+  color: #99a2a8;
+  border-color: #99a2a8; */
+  background: #ffffff;
+  border: 2px solid #3f78e0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #3f78e0;
+}
+.multi_step_form #msform .previous_button:hover,
+.multi_step_form #msform .previous_button:focus {
+  background: #405867;
+  border-color: #405867;
+  color: #fff;
+}
+.main-block2 {
+  width: 50% !important;
+  border: 1px solid transparent;
+  /* height: 500
+  px
+  ; */
+  background: #ffffff;
+  box-shadow: 0px -4px 31px rgb(14 16 62 / 2%);
+  border-radius: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  position: relative !important;
+  left: 10%;
+}
+body {
+  /* background: #e5e5e5 !important; */
+  height: 100vh;
+  /* width: 100vw; */
+  margin: 0;
+  padding: 0;
+}
+.bdbg {
+  background: #f6f9ff;
+}
+.net-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.main-block {
+  width: 45vw !important;
+  border: 1px solid transparent;
+  height: 583px;
+  background: #ffffff;
+  box-shadow: 0px -4px 31px rgba(14, 16, 62, 0.02);
+  border-radius: 15px;
+  position: relative !important;
+  /* left: 10%; */
+}
+.centering {
+  position: absolute;
+  top: 15vh !important;
+  left: 25vw;
+}
+#network {
+  font-size: 16px;
+  padding: 0.65em 2.5em 0.55em 0.75em;
+
+  width: 70%;
+  margin-top: 19px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #8182867c;
+}
+.btn1 {
+  width: 90px;
+  margin-left: 15px;
+  color: #3f78e0 !important;
+  border: 1px solid #3f78e0 !important;
+}
+.btn1:hover {
+  background: #3f78e0 !important;
+  color: #fff !important;
+}
+.progress-meter {
+  padding: 0;
+}
+
+ol.progress-meter {
+  padding-bottom: 9.5px;
+  list-style-type: none;
+}
+ol.progress-meter li {
+  display: inline-block;
+  text-align: center;
+  text-indent: -19px;
+  height: 42px;
+  width: 24.99%;
+  font-size: 12px;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+}
+ol.progress-meter li:before {
+  position: relative;
+  float: left;
+  text-indent: 0;
+  left: -webkit-calc(50% - 9.5px);
+  left: -moz-calc(50% - 9.5px);
+  left: -ms-calc(50% - 9.5px);
+  left: -o-calc(50% - 9.5px);
+  left: calc(50% - 9.5px);
+}
+ol.progress-meter li.done {
+  font-size: 12px;
+}
+.cp {
+  align-items: center;
+  text-align: center;
+
+  color: #959ca9;
+}
+ol.progress-meter li.done:before {
+  content: "\2713";
+  height: 24px;
+  width: 24px;
+  line-height: 21.85px;
+  bottom: -28.175px;
+  border: none;
+  border-radius: 19px;
+}
+ol.progress-meter li.todo {
+  font-size: 12px;
+}
+ol.progress-meter li.todo:before {
+  content: "\2B24";
+  font-size: 29.1px;
+  bottom: -26.95px;
+  line-height: 18.05px;
+}
+ol.progress-meter li.done {
+  color: black;
+  border-bottom-color: #3f78e0;
+}
+ol.progress-meter li.done:before {
+  color: white;
+  background-color: #3f78e0;
+}
+ol.progress-meter li.todo {
+  color: silver;
+  border-bottom-color: silver;
+}
+ol.progress-meter li.todo:before {
+  color: silver;
+}
+.progress-mtr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.center {
+  position: absolute;
+  top: 12vh;
+  left: 23vw;
+}
+.success-msg {
+  font-size: 27px;
+  font-weight: 500;
+  color: #6bbea3;
+}
+.login-details {
+  border: 1.5px solid #edf1f5;
+  border-radius: 2px;
+  align-items: center;
+  padding: 8px 0px 0px 0px !important;
+  border: 1.5px solid #edf1f5;
+  box-sizing: border-box;
+  box-shadow: 0px 6px 32px 6px rgb(14 16 62 / 5%);
+  border-radius: 4px;
+}
+.btn2 {
+  background: #3f78e0 !important;
+  width: 90px;
+  margin-left: 2vw;
+}
+.sm-text {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.shadow_input {
+  background: #ffffff !important;
+  border: 1.5px solid #edf1f5 !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 6px 32px 6px rgba(14, 16, 62, 0.05) !important;
+}
+
+.select_input {  
+    border-radius: 3px;
+    border: 1px solid #d8e1e7;
+    padding: 0 20px;
+    height: 50px !important;
+    font: 400 15px/48px "Roboto", sans-serif;
+    color: #5f6771;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+}
+
+.error {
+  color:red;
+  float:left;
+  font-size: 14px;
+}
+
+#overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black url(spinner.gif) center center no-repeat;
+    opacity: 0.8;
+    z-index: 9999999;
+}
+.loader {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999999999;
+  width: 50px;
+  height: 50px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ff5c00;
+  border-bottom: 16px solid #4494de;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

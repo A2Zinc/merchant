@@ -1,0 +1,141 @@
+    <?php include_once("inc/js_css.php"); ?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-rep bg-dark py-3 px-4">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <a class="navbar-brand" href="javascript:;" onclick="javascript: history.back(-1);">Cash Drops</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="d-flex justify-content-end btninbig">
+                        <button class="bckbtn btn-backWrapper newredwrap reportbackbtn" onclick="goBack();" >
+                        <img src="<?php echo base_url(); ?>assets/images/Vector (11).png" alt="" class="gotopos">
+                    </button>
+                    <img src="<?php echo base_url(); ?>/assets/images/Group 1882.png" alt="" class="mobileimg">
+                            <div class="mainscreen">
+                                <a href="<?php echo base_url(); ?>cashier">
+                                    <p class="maindes">MAIN SCREEN</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content">
+        <h4 class="px-12">Filters</h4>
+
+            <form name="frmDetailsFilter" id="frmDetailsFilter">
+                <div class="row px-auto">
+                    <!-- <div class="col-md-3">
+                        <div class="form-group">                        
+                            <label>Products</label>
+                            <input type="text" name="product_name_filter" id="product_name_filter" class="form-control" value="<?php //if(!empty($product_name_return)) print $product_name_return; ?>" placeholder="Products">
+                        </div>
+                    </div> -->
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Start Date</label>
+                            <input type="date" max="<?php echo date('Y-m-d'); ?>" name="start_date_filter" id="start_date_filter" class="form-control" value="<?php if(!empty($start_date_filter)){ print $start_date_filter; }else{ echo date('Y-m-d'); } ?>">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>End Date</label>
+                            <input type="date" max="<?php echo date('Y-m-d'); ?>" name="end_date_filter" id="end_date_filter" class="form-control" value="<?php if(!empty($end_date_filter)){ print $end_date_filter; }else{ echo date('Y-m-d'); } ?>">
+                        </div>
+                    </div>
+
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button class="btn btn-primary btn-dark my-2 my-sm-0 form-control" id="frmDetailsFilterBtn" type="button">Go</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button class="btn btn-primary btn-dark my-sm-0 form-control" id="frmClearFilterBtn" type="button">Clear Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="">
+                        
+                        <table class="table table-sm cell-border" id="tbl_inventory" style="width:100%">
+                            <thead class="headsec">
+                                <tr>                                    
+                                    <th class="text-white">Username</th>
+                                    <th class="text-white">Amount</th>
+                                    <th class="text-white">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    if(!empty($kpi_detail_cash_drops)) {
+                                        foreach ($kpi_detail_cash_drops as $key => $value) {
+                                ?>
+                                <tr>                                    
+                                    <td><?php print $value["first_name"]." ".$value["last_name"]; ?></td>
+                                    <td><?php print $value["cash_drops"]; ?></td>
+                                    <td><?php print date("m/d/Y", strtotime($value["created_at"])); ?></td>                                    
+                                </tr>
+                                <?php
+                                        }
+                                    }
+                                ?>                                
+                            </tbody>
+                        </table>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).on("click","#frmDetailsFilterBtn",function() {
+            $("#overlay,.loader").show();
+
+            var start_date_filter = "";
+            if($("#start_date_filter").val() != "")
+                start_date_filter = $("#start_date_filter").val();
+
+            var end_date_filter = "";
+            if($("#end_date_filter").val() != "")
+                end_date_filter = $("#end_date_filter").val();            
+
+            window.open('<?php print base_url(); ?>cashier/kpi_detail_cash_drops/'+start_date_filter+'/'+end_date_filter, '_self').focus();
+        });
+
+        $(document).on("click","#frmClearFilterBtn",function() {
+            $("#overlay,.loader").show();
+            var start_date_filter = "";
+            var end_date_filter = "";
+            window.open('<?php print base_url(); ?>cashier/kpi_detail_cash_drops/'+start_date_filter+'/'+end_date_filter, '_self').focus();
+        });
+
+        var tbl_inventory = $('#tbl_inventory').DataTable({
+            "pageLength": 10,
+            "autoWidth": true,
+            "bLengthChange": false,
+            "responsive": true,
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'pdf',
+                    text: 'Email',
+                    action: function () {
+                        extendDataTable(tbl_inventory,"Cash Drops");
+                    }
+                }
+            ],
+        });
+    });
+</script>

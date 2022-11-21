@@ -1,0 +1,116 @@
+.body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Circular Std Book";
+    font-size:14px;
+    width:100vw;
+    height:100vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color:#fff;
+    
+}
+th{
+    text-transform: uppercase;  
+    background: #D62127;
+    color:#fff;
+    font-size: 1.1rem;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 12px;
+}
+td{
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+table{
+    width: 100%;
+    border-bottom:#EFEFEF;
+}
+.label {
+ display: inline;
+ float: right;
+ padding-right: 30px;
+}
+.reg-btn{
+    float: right;
+    border: none;
+    margin-top: 15px;
+    background: #D62127;
+    color: #ffffff;
+    padding:0px 5px;
+    margin-left:35px;
+    height: 41px;
+    border-radius: 2px;
+    font-size: 17px;
+    font-weight: 600;
+    width:20%
+}
+.new-cust{
+    font-size: 1.65rem !important;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    min-width:70%;
+}
+
+.offers{
+    font-size: 1.12rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    color: #D62127;
+}
+.lf-div{
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: 0px;
+    padding-top: 90px;
+    height: 35vh;
+    background: #260707;
+    color: #ffffff;
+    width:35.3vw;
+}
+.rg-div{
+    width:65vw;
+    height:35vh;
+    padding: 0px 15px;
+}
+hr.new1 {
+     border-top: 1px dotted #ffffff !important;
+     opacity: 0.2;
+     margin: 0px !important;
+     width: 92.5%;
+}
+.table th:last-child{
+    background: #B61A20;
+}
+.table th{
+    height:50px;
+}
+.table td{
+    padding: 0px !important;
+}
+.left{
+    float: left;
+    width:35vw;
+    height: 65vh;
+}
+.right{
+    float: right;
+    width:65vw;
+    height:65vh;
+}
+       

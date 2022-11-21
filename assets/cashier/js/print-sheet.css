@@ -1,0 +1,12 @@
+body{
+    background: green!important;
+}
+.container{
+ background: red!important;
+}
+@media print and (color) {
+    * {
+       -webkit-print-color-adjust: exact;
+       print-color-adjust: exact;
+    }
+ }
