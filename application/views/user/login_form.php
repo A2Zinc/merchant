@@ -59,26 +59,9 @@
 
                     <?php echo form_open('adminlogin/merchant_do_login', array('id' => 'validate','class' => 'formaction')) ?>
 
-                    <div class="form-group mb24" style="display: none;">
-                        <label class="customlabel" for="usr">User Type</label>
 
-                        <select  class="form-control" id='change_user_type'>
-                            <option value="merchant">Merchant</option>
-                            <option value="store">Store</option>
-                        </select>
-                    </div>
                     
-                    <div class="form-group mb24" id='user_db_session_div' style="display: none;">    
-                        <label class="customlabel" for="usr">Select Store</label>
-                        <select name="user_db_session" id='user_db_session' class="form-control" >
-                            <?php 
 
-                            foreach ($stores as $key => $value) { ?>
-                                    <option value="<?php echo $value['store_db'] ?>"><?php echo $value['store_name'] ?></option>
-
-                            <?php } ?>
-                        </select>
-                    </div>
 
                     <div class="form-group mb24">
                         <label class="customlabel" for="usr">Username</label>

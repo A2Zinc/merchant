@@ -84,11 +84,12 @@ $dname='super_admin';
 // echo $dname;
 // die;
 
+
 $db['default'] = array(
     'dsn'   => '',
     'hostname' => 'localhost',
     'username' => 'root',
-    'password' => 'root',
+    'password' => '',
     'database' => $dname,
     'dbdriver' => 'mysqli',
     'dbprefix' => '',

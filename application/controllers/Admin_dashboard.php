@@ -2,24 +2,24 @@
 class Admin_dashboard extends CI_Controller {
 	
 	function __construct() {
+
 		parent::__construct();
 		$this->load->model('Soft_settings');
 		$this->load->model('Customers');
 		$this->load->model('Products');
 		$this->load->model('Suppliers');
 		// $this->load->model('Invoices');
-		$this->load->model('Purchases');
 		$this->load->model('Reports');
-		$this->load->model('Accounts');
+	//	$this->load->model('Accounts');
 		$this->load->model('Users');
 		// $this->load->library('lreport');
 		// $this->load->library('occational');
 		// $this->load->library('luser');
 		$this->load->model('Gen_settingm');
 		$this->load->library('super_auth');
-	    if($this->super_auth->is_logged()===false){
-	        redirect('/');
-	    }
+	    // if($this->super_auth->is_logged()===false){
+	    //     redirect('/');
+	    // }
 	}
     //Default index page loading
 	public function index(){
@@ -37,20 +37,21 @@ class Admin_dashboard extends CI_Controller {
 		$total_suppliers 	= $this->Suppliers->count_supplier();
 		// $total_sales 		= $this->Invoices->count_invoice();
 		// $total_store_invoice= $this->Invoices->total_store_invoice();
-		$total_purchase 	= $this->Purchases->count_purchase();
+		$total_purchase 	= 500;
 
-		$this->Accounts->accounts_summary(1);
-		$total_expese 		= $this->Accounts->sub_total;
-		$monthly_sales_report = $this->Reports->monthly_sales_report();
-		$sales_report 		= $this->Reports->todays_total_sales_report();
-		$purchase_report 	= $this->Reports->todays_total_purchase_report();
-		$discount_report 	= $this->Reports->todays_total_discount_report();
-		$grand_total_sales	= $this->Reports->grand_total_sales_report();
-		$terminals			= $this->Reports->terminals();
-		$user_report		= $this->Reports->user_report();
-		$best_selling_products		= $this->Reports->best_selling_products();
-		$last_sales				=	$this->Reports->last_sales();
-		
+
+		// //$this->Accounts->accounts_summary(1);
+		// $total_expese 		= 2500;
+		// $monthly_sales_report = $this->Reports->monthly_sales_report();
+		// $sales_report 		= $this->Reports->todays_total_sales_report();
+		// $purchase_report 	= $this->Reports->todays_total_purchase_report();
+		// $discount_report 	= $this->Reports->todays_total_discount_report();
+		// $grand_total_sales	= $this->Reports->grand_total_sales_report();
+		// $terminals			= $this->Reports->terminals();
+		// $user_report		= $this->Reports->user_report();
+		// $best_selling_products		= $this->Reports->best_selling_products();
+		// $last_sales				=	$this->Reports->last_sales();
+
 //		$currency_details 	= $this->Soft_settings->retrieve_currency_info();
 
 		$data = array(
@@ -76,8 +77,9 @@ class Admin_dashboard extends CI_Controller {
 		);
 
 
-		$content = $this->parser->parse('include/admin_home',$data,true);
-		$this->template->full_admin_html_view($content);
+		 $content = $this->parser->parse('include/admin_home',$data,true);
+		// print_r($content);
+		 $this->template->full_admin_html_view($content);
 	}
 	function best_selling_product(){
 		$type=$this->input->post('period');

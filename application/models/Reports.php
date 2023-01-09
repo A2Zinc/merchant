@@ -1011,6 +1011,7 @@ class reports extends MY_Model
 
     public function monthly_sales_report()
     {
+
         $query1 = $this->db->query("
 			SELECT 
 			date,

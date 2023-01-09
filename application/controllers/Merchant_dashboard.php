@@ -53,20 +53,17 @@ class Merchant_dashboard extends CI_Controller {
 		$total_suppliers 	= $this->Suppliers->count_supplier();
 		// $total_sales 		= $this->Invoices->count_invoice();
 		// $total_store_invoice= $this->Invoices->total_store_invoice();
-		$total_purchase 	= $this->Purchases->count_purchase();
+//		$total_purchase 	= $this->Purchases->count_purchase();
 
-		$this->Accounts->accounts_summary(1);
-		$total_expese 		= $this->Accounts->sub_total;
-		$monthly_sales_report = $this->Reports->monthly_sales_report();
-		$purchase_report 	= $this->Reports->todays_total_purchase_report();
-		$discount_report 	= $this->Reports->todays_total_discount_report();
-		$terminals			= $this->Reports->terminals();
-		$user_report		= $this->Reports->user_report();
-		$best_selling_products		= $this->Reports->best_selling_products();
-		$last_sales				=	$this->Reports->last_sales();
-		
+		$monthly_sales_report = 0;
+		$purchase_report 	= 0;
+		$discount_report 	= 0;
+		$terminals			= 0;
+		$user_report		= 0;
+		$best_selling_products		= 0;
+		$last_sales				=	0;
 //		$currency_details 	= $this->Soft_settings->retrieve_currency_info();
-
+		
 		$data = array(
 			'title' 			=> display('dashboard'),
 			'total_customer' 	=> $total_customer,
@@ -79,7 +76,7 @@ class Merchant_dashboard extends CI_Controller {
 			'purchase_amount' 	=> number_format($purchase_report[0]['total_purchase'], 2, '.', ','),
 			'discount_amount' 	=> number_format($discount_report[0]['total_discount'], 2, '.', ','),
 			'total_expese' 		=> $total_expese,
-			'monthly_sales_report' => $monthly_sales_report,
+			'monthly_sales_report' => 0,
 			'currency' 			=> $currency_details[0]['currency_icon'],
 			'grand_total_sales' => $grand_total_sales,
 			'terminals'			=> $terminals,
@@ -89,8 +86,8 @@ class Merchant_dashboard extends CI_Controller {
 //			'position' 			=> $currency_details[0]['currency_position'],
 		);
 
-
-		$content = $this->parser->parse('include/merchant_admin_home',$data,true);
+		echo "total_purchase";
+		 $content = $this->parser->parse('include/merchant_admin_home',$data,true);
 		$this->template->full_admin_html_view($content);
 	}
 	function best_selling_product(){

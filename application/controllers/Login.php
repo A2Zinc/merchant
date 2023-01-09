@@ -15,7 +15,6 @@ class Login extends CI_Controller{
 	    if($this->super_auth->is_logged()){
 	        redirect('/Admin_dashboard');
 	    }
-		$data['stores']=$this->Stores->store_list(['filter_merchant_id' =>0]);
 		$data['title'] = "Admin Login Area";
 		$this->load->view('user/login_form',$data);
 	}

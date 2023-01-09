@@ -8,7 +8,7 @@ class Stores extends CI_Model {
 	public function store_list($data_filter_arr=array()) {
 
 		$merchant_id = $data_filter_arr["filter_merchant_id"];
-		$this->db->select('store_set.*,m.name as merchant_name');
+		$this->db->select('store_set.*,m.customer_name as merchant_name');
 		$this->db->from('store_set');
 		$this->db->join('merchant m','store_set.merchant_id= m.merchant_id','left');
 		$this->db->where('default_status',0);

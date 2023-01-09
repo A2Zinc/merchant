@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | In some instances, however, you may want to remap this relationship
 | so that a different class/function is called than the one
 | corresponding to the URL.
-|
+| 
 | Please see the user guide for complete details:
 |
 |   https://codeigniter.com/user_guide/general/routing.html
@@ -62,7 +62,7 @@ $route['adminlogin/switchback']            = 'Login/switchback';
 
 $route['adminlogin/logout']            = 'Login/logout';
 
-$route['default_controller']                = 'Login';
+$route['default_controller']                = 'Admin_dashboard';
 $route['cabinet']                           = 'website/Cabinet';
 //$route['home']                                = 'website/Home';
 $route['home/add_to_cart']                  = 'website/Home/add_to_cart';

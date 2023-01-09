@@ -3,7 +3,6 @@ class Template {
 
 	//Admin Html View....
 	public function full_admin_html_view($content){
-
 		$CI =& get_instance();
 		$logged_info='';
 
@@ -16,13 +15,16 @@ class Template {
 		// 	$logged_info = $CI->parser->parse('include/admin_header',$log_info,true);
 		// }
 		$CI->load->model('Products');
-		$company_info=$CI->Products->retrieve_company();
+		$company_info=[];
 		$data = array (
 				'logindata' 	=> $logged_info,
 				'content' 		=> $content,
 				'company_info' 	=> $company_info
 			);
-		$content = $CI->parser->parse('admin_html_template',$data);
+
+		echo $content = $CI->parser->parse('admin_html_template',$data);
+	echo "dasds";
+		
 	}
 	public function full_super_admin_html_view($content){
 

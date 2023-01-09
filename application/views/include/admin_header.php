@@ -8,7 +8,7 @@ $CI->load->model('Gen_settingm');
 
 $Soft_settings = $CI->Soft_settings->retrieve_setting_editdata();
 $users = $CI->Users->profile_edit_data();
-$out_of_stock = $CI->Reports->out_of_stock_count();
+$out_of_stock = 0;
 //$store_wise_products = $CI->Reports->store_wise_product();
 //dd($store_wise_products);
 $getsitelogo = $CI->Gen_settingm->get_logo_favicon();
